@@ -108,6 +108,30 @@ npm run dev
 
 ---
 
+## Evidencia de Pruebas y Ejecución (Screenshots)
+
+### 1. Pruebas Unitarias e Integración Backend (Jest & Supertest)
+Todas las suites (`health.test.js`, `auth.test.js`, `task.test.js`) aprobadas al 100%:
+![Pruebas Backend Jest](screenshots/01_jest_backend_tests.png)
+
+### 2. Ejercicio Práctico 19a: Rotación, Reúso y Revocación
+Verificación E2E de rotación de tokens, revocación por familia tras detección de reúso, y logout global:
+![Ejercicio E2E Rotacion y Reuso](screenshots/02_exercise_19a_e2e_verification.png)
+
+### 3. PostgreSQL 16 y Docker Compose
+Estado saludable del contenedor de base de datos y esquema de Prisma sincronizado:
+![PostgreSQL y Docker](screenshots/03_docker_postgres_health.png)
+
+### 4. Endpoints y Seguridad HTTP
+Comprobación del endpoint `/health` y rechazo seguro con `401 UNAUTHENTICATED` en rutas protegidas:
+![Endpoints y Seguridad](screenshots/04_api_health_and_security.png)
+
+### 5. Pruebas del Cliente Flutter
+Pruebas de cliente con `MockClient` verificando refresco *single-flight* y reintento transparente tras 401:
+![Pruebas Flutter](screenshots/05_flutter_tests.png)
+
+---
+
 ## Cliente Móvil Flutter
 
 Instalar dependencias y ejecutar en el emulador de Android (apuntando a `http://10.0.2.2:3000/api/v1`):
