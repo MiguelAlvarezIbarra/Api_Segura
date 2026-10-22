@@ -1,0 +1,7 @@
+# Root gitignore
+**/node_modules/
+**/.env
+**/coverage/
+.dart_tool/
+.packages
+build/
